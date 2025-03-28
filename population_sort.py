@@ -12,3 +12,10 @@ def read_data(filename):
         print(f"Помилка: {e}")
         return []
 
+
+def sort_data(data, index):
+    """Сортує дані за вибраним параметром."""
+    return sorted(data, key=lambda x: x[index], reverse=True)
+
+
+
